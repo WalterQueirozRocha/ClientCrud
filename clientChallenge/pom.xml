@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.4.5</version>
+		<version>3.4.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example.clientCrudChallenge</groupId>
-	<artifactId>clientChallenge</artifactId>
+	<groupId>com.devsuperior</groupId>
+	<artifactId>dscommerce</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>clientChallenge</name>
+	<name>dscommerce</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -49,11 +49,24 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+ 			<groupId>jakarta.validation</groupId>
+ 			<artifactId>jakarta.validation-api</artifactId>
+ 			<version>3.0.2</version>
+ 			</dependency>
+ 			
+ 		<dependency>
+ 			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+ 			<version>8.0.0.CR2</version>
+ 		</dependency>
+ 		
 	</dependencies>
 
 	<build>
 		<plugins>
-			<plugin>
+		<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>3.1.0</version> <!--$NO-MVN-MAN-VER$ -->

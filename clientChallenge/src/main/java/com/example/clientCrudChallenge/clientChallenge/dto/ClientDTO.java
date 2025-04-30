@@ -4,14 +4,22 @@ import java.time.LocalDate;
 
 import com.example.clientCrudChallenge.clientChallenge.entities.Client;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.PastOrPresent;
+
 public class ClientDTO {
 
 	private Long id;
+	@NotBlank
 	private String name;
 	private String cpf;
 	private Double income;
+	@PastOrPresent
 	private LocalDate birthDate;
 	private Integer children;
+
+	public ClientDTO() {
+	}
 
 	public ClientDTO(Client entity) {
 		id = entity.getId();
